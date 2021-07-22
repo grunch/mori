@@ -69,7 +69,8 @@ cargo run -- balance --desc $DESC --change $CHANGE
 Now you want to send some coins to a other user address, for this you need to `build` a transaction.
 ```
 cargo run -- build --desc $DESC --change $CHANGE --amount <amount in satoshsi> --destination <tBTC address>
-``eat will generate a [PSBT](https://github.com/bitcoin/bitcoin/blob/master/doc/psbt.md) that we need to sign and broadcast with the `send` command.
+```
+We will see a [PSBT](https://github.com/bitcoin/bitcoin/blob/master/doc/psbt.md) that we need to sign and broadcast with the `send` command.
 ```
 cargo run -- send --desc $DESC --psbt <psbt transaction>
 ```
